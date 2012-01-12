@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Test page for Missing Language Handlers for Google Code Prettify</title>
+
+    <link rel="stylesheet" href="http://hail2u.github.com/natural.css">
+    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/desert.css">
+
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script src="https://raw.github.com/hail2u/google-code-prettify-language-handlers/master/lang-css.js"></script>
+    <script src="https://raw.github.com/hail2u/google-code-prettify-language-handlers/master/lang-scss.js"></script>
+    <script src="https://raw.github.com/hail2u/google-code-prettify-language-handlers/master/lang-vim.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <header>
+      <h1>Test page for Missing Language Handlers for Google Code Prettify</h1>
+    </header>
+
+    <section>
+      <h1>lang-css.js</h1>
+
+      <pre class="prettyprint"><code class="lang-css">@charset('UTF-8');
+
+/** A url that is not quoted. */
+@import(url(/more-styles.css));
+
+HTML { content-before: 'hello\20'; content-after: 'w\6f rld';
+       -moz-spiff: inherit !important }
+
+/* Test units on numbers. */
+BODY { margin-bottom: 4px; margin-left: 3in; margin-bottom: 0; margin-top: 5% }
+
+/** Test number literals and quoted values. */
+TABLE.foo TR.bar A#visited { color: #001123; font-family: "monospace" }
+/** bolder is not a name, so should be plain.  !IMPORTANT is a keyword
+  * regardless of case.
+  */
+blink { text-decoration: BLINK !IMPORTANT; font-weight: bolder }
+
+/* Test rgba() and hsla() */
+.rgba {
+  color: rgba(51, 102, 153, 0.4);
+}
+
+.hsla {
+  background-color: hsla(210, 50%, 40%, 0.4);
+}
+</code></pre>
+    </section>
+
+    <section>
+      <h1>lang-scss.js</h1>
+
+      <pre class="prettyprint"><code class="lang-scss">/*!
+ * Sassy CSS
+ */
+
+// Variable
+$blue: #3bbfce;
+$margin: 16px;
+
+// Mix-in
+@mixin table-base {
+  th {
+    text-align: center;
+    font-weight: bold;
+  }
+  td, th {padding: 2px}
+}
+
+@mixin left($dist) {
+  float: left;
+  margin-left: $dist;
+}
+
+#data {
+  @include left(10px);
+  @include table-base;
+}
+
+// Extending
+.error {
+  border: 1px #f00;
+  background: #fdd;
+}
+
+.error.intrusion {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.badError {
+  @extend .error;
+  border-width: 3px;
+}
+</code></pre>
+    </section>
+
+    <section>
+      <h1>lang-vim.js</h1>
+
+      <pre class="prettyprint"><code class="language-vim">&quot; Restore previous session with cofirmation
+function! s:RestoreSessionWithConfirm()
+  let msg = &#39;Do you want to restore previous session?&#39;
+
+  if !argc() &amp;&amp; confirm(msg, &quot;&amp;Yes\n&amp;No&quot;, 1, &#39;Question&#39;) == 1
+    execute &#39;SessionRestore&#39;
+  endif
+endfunction
+</code></pre>
+    </section>
+  </body>
+</html>
