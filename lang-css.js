@@ -48,7 +48,7 @@ PR['registerLangHandler'](
                 /^\'(?:[^\n\r\f\\\']|\\(?:\r\n?|\n|\f)|\\[\s\S])*\'/, null],
             ['lang-css-str', /^url\(([^\)\"\']*)\)/i],
             [PR['PR_KEYWORD'],
-                /^(?:url|rgba?|hsla?|\!important|@import|@page|@media|@charset|@font-face|inherit)(?=[^\-\w]|$)/i, null],
+                /^(?:url|rgba?|hsla?|local|\!important|@import|@page|@media|@charset|@font-face|inherit)(?=[^\-\w]|$)/i, null],
             // A property name -- an identifier followed by a colon.
             ['lang-css-kw', /^(-?(?:[_a-z]|(?:\\[0-9a-f]+ ?))(?:[_a-z0-9\-]|\\(?:\\[0-9a-f]+ ?))*)\s*:/i],
             // A C style block comment.  The <comment> production.
