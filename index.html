@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/desert.css">
 
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-    <script src="https://raw.github.com/hail2u/google-code-prettify-language-handlers/master/lang-css.js"></script>
-    <script src="https://raw.github.com/hail2u/google-code-prettify-language-handlers/master/lang-scss.js"></script>
-    <script src="https://raw.github.com/hail2u/google-code-prettify-language-handlers/master/lang-vim.js"></script>
+    <script src="lang-css.js"></script>
+    <script src="lang-scss.js"></script>
+    <script src="lang-vim.js"></script>
   </head>
   <body onload="prettyPrint()">
     <header>
@@ -46,6 +46,14 @@ blink { text-decoration: BLINK !IMPORTANT; font-weight: bolder }
 
 .hsla {
   background-color: hsla(210, 50%, 40%, 0.4);
+}
+
+/* Test @font-face */
+@font-face {
+  font-family: "Foo Bar";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/font/foo-bar.woff"), local("Foo Bar");
 }
 </code></pre>
     </section>
