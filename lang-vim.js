@@ -1,8 +1,8 @@
-/**
- * @preserve Copyright (C) 2012 Kyo Nagashima
- *
- * LICENSE: http://hail2u.mit-license.org/2012
- */
+// Copyright (C) 2012 Kyo Nagashima
+//
+// LICENSE: http://hail2u.mit-license.org/2012
+
+
 
 /**
  * @fileoverview
