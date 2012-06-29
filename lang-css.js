@@ -46,7 +46,7 @@ PR['registerLangHandler'](
                 /^\"(?:[^\n\r\f\\\"]|\\(?:\r\n?|\n|\f)|\\[\s\S])*\"/, null],
             [PR['PR_STRING'],
                 /^\'(?:[^\n\r\f\\\']|\\(?:\r\n?|\n|\f)|\\[\s\S])*\'/, null],
-            ['lang-css-str', /^url\(([^\)\"\']*)\)/i],
+            ['lang-css-str', /^url\(([^\)\"\']+)\)/i],
             [PR['PR_KEYWORD'],
                 /^(?:url|rgba?|hsla?|local|\!important|@import|@page|@media|@charset|@font-face|inherit)(?=[^\-\w]|$)/i, null],
             // A property name -- an identifier followed by a colon.
