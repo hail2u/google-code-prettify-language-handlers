@@ -14,7 +14,6 @@
 // limitations under the License.
 
 
-
 /**
  * @fileoverview
  * Registers a language handler for SCSS (sassy CSS).

@@ -3,7 +3,6 @@
 // LICENSE: http://hail2u.mit-license.org/2012
 
 
-
 /**
  * @fileoverview
  * Registers a language handler for Vim script.
