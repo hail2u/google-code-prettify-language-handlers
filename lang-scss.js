@@ -1,5 +1,6 @@
 /**
- * @preserve Copyright (C) 2009 Google Inc.
+ * @preserve
+ * Copyright (C) 2009 Google Inc.
  * Copyright (C) 2011 Kyo Nagashima <kyo@hail2u.net>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +43,7 @@ PR['registerLangHandler'](
             // Quoted strings.  <string1> and <string2>
             [PR['PR_STRING'], /^\"(?:[^\n\r\f\\\"]|\\(?:\r\n?|\n|\f)|\\[\s\S])*\"/, null],
             [PR['PR_STRING'], /^\'(?:[^\n\r\f\\\']|\\(?:\r\n?|\n|\f)|\\[\s\S])*\'/, null],
-            ['lang-scss-str', /^url\(([^\)\"\']*)\)/i],
+            ['lang-scss-str', /^url\(([^\)\"\']+)\)/i],
             [PR['PR_KEYWORD'], /^(?:url|rgba?|hsla?|\!important|@import|@page|@media|@charset|inherit|abs|adjust-color|adjust-hue|alpha|blue|ceil|change-color|comparable|complement|darken|desaturate|fade-in|fade-out|floor|grayscale|green|hue|invert|join|length|lighten|lightness|mix|nth|opacity|percentage|quote|red|round|saturate|saturation|scale-color|transparentize|type-of|unit|unitless|unquote|!default|@extend|@debug|@warn|@if|@else( if)?|@for|@each|@while|@mixin|@include|@function|@return)(?=[^\-\w]|$)/i, null],
             // A property name -- an identifier followed by a colon.
             ['lang-scss-kw', /^(-?(?:[_a-z]|(?:\\[0-9a-f]+ ?))(?:[_a-z0-9\-]|\\(?:\\[0-9a-f]+ ?))*)\s*:/i],

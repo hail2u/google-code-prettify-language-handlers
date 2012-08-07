@@ -1,5 +1,6 @@
 /**
- * @preserve Copyright (C) 2009 Google Inc.
+ * @preserve
+ * Copyright (C) 2009 Google Inc.
  * Copyright (C) 2010 Kyo Nagashima <kyo@hail2u.net>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +47,7 @@ PR['registerLangHandler'](
                 /^\"(?:[^\n\r\f\\\"]|\\(?:\r\n?|\n|\f)|\\[\s\S])*\"/, null],
             [PR['PR_STRING'],
                 /^\'(?:[^\n\r\f\\\']|\\(?:\r\n?|\n|\f)|\\[\s\S])*\'/, null],
-            ['lang-css-str', /^url\(([^\)\"\']*)\)/i],
+            ['lang-css-str', /^url\(([^\)\"\']+)\)/i],
             [PR['PR_KEYWORD'],
                 /^(?:url|rgba?|hsla?|local|\!important|@import|@page|@media|@charset|@font-face|inherit)(?=[^\-\w]|$)/i, null],
             // A property name -- an identifier followed by a colon.
