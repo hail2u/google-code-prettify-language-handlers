@@ -4,8 +4,13 @@ Missing Language Handlers for Google Code Prettify
 Repository for additional or modified language handlers for [Google Code Prettify](http://code.google.com/p/google-code-prettify/).
 
 
-Handlers
+HANDLERS
 --------
+
+### lang-config.js
+
+Generic config language handler.
+
 
 ### lang-css.js
 
@@ -24,7 +29,7 @@ Modified [CSS language handler](http://code.google.com/p/google-code-prettify/so
 [Vim](http://www.vim.org/) script language handler.
 
 
-License
+LICENSE
 -------
 
 See individual files.
