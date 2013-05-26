@@ -21,7 +21,7 @@ Modified [CSS language handler](http://code.google.com/p/google-code-prettify/so
 
 ### lang-scss.js
 
-[Sass](http://sass-lang.com/)'s SCSS syntax language handler.
+[Sass](http://sass-lang.com/) language handler.
 
 
 ### lang-vim.js
