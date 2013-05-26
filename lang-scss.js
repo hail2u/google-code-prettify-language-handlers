@@ -69,7 +69,7 @@ PR['registerLangHandler'](
             [PR['PR_PUNCTUATION'], /^[^\s\w\'\"#{}$]+/]
         ]
     ),
-    ['scss']
+    ['scss', 'sass']
 );
 
 PR['registerLangHandler'](

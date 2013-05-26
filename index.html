@@ -113,6 +113,44 @@ $margin: 16px;
   border-width: 3px;
 }
 </code></pre>
+
+      <pre class="prettyprint"><code class="lang-sass">/*!
+ * Sass indented syntax
+ */
+
+// Variable
+$blue: #3bbfce
+$margin: 16px
+
+// Mix-in
+@mixin table-base
+  th
+    text-align: center
+    font-weight: bold
+  td, th
+    padding: 2px
+
+@mixin left($dist)
+  float: left
+  margin-left: $dist
+
+#data
+  @include left(10px)
+  @include table-base
+
+// Extending
+.error
+  border: 1px #f00
+  background: #fdd
+
+.error.intrusion
+  font-size: 1.3em
+  font-weight: bold
+
+.badError
+  @extend .error
+  border-width: 3px
+</code></pre>
     </section>
 
     <section>
