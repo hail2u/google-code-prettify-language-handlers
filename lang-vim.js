@@ -33,7 +33,7 @@ PR['registerLangHandler'](
             // Line comment
             [PR['PR_COMMENT'], /^[\"\u2018\u2019][^\r\n\u2028\u2029]*/],
             // Keywords
-            [PR['PR_KEYWORD'], /^(?:function|endfunction|delfunction|return|call|let|unlet|lockvar|unlockvar|if|endif|else|elseif|while|endwhile|for|in|endfor|continue|break|try|endtry|catch|finally|throw|echo|ehon|echohl|echomsg|echoerr|execute|set|autocmd|augroup|[nvxsoilc]?(?:nore)?map|command)\b/i],
+            [PR['PR_KEYWORD'], /^(?:function|endfunction|delfunction|return|call|let|unlet|lockvar|unlockvar|if|endif|else|elseif|while|endwhile|for|in|endfor|continue|break|try|endtry|catch|finally|throw|echo|ehon|echohl|echomsg|echoerr|execute|set|autocmd|augroup|[nvxsoilc]?(?:nore)?map|command)\b!?/i],
             // Literal number
             [PR['PR_LITERAL'], /^(?:\d+)/i],
             // Identifier
