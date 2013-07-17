@@ -29,6 +29,12 @@ Modified [CSS language handler](http://code.google.com/p/google-code-prettify/so
 [Vim](http://www.vim.org/) script language handler.
 
 
+EXAMPLE
+-------
+
+[Test page for Missing Language Handlers for Google Code Prettify](http://hail2u.github.io/google-code-prettify-language-handlers/)
+
+
 LICENSE
 -------
 
