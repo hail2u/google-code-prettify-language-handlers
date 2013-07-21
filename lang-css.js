@@ -1,5 +1,4 @@
 /**
- * @preserve
  * Copyright (C) 2009 Google Inc.
  * Copyright (C) 2010 Kyo Nagashima <kyo@hail2u.net>
  *
