@@ -1,4 +1,4 @@
-/**
+/*!
  * Copyright (C) 2012 Kyo Nagashima <kyo@hail2u.net>
  *
  * http://hail2u.mit-license.org/2012
