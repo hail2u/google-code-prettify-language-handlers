@@ -1,4 +1,4 @@
-/**
+/*!
  * Copyright (C) 2009 Google Inc.
  * Copyright (C) 2010 Kyo Nagashima <kyo@hail2u.net>
  *
@@ -58,7 +58,7 @@ PR['registerLangHandler'](
             // A number possibly containing a suffix.
             [PR['PR_LITERAL'], /^(?:\d+|\d*\.\d+)(?:%|[a-z]+)?/i],
             // A hex color
-            [PR['PR_LITERAL'], /^#(?:[0-9a-f]{3}){1,2}/i],
+            [PR['PR_LITERAL'], /^#(?:[0-9a-f]{3}){1,2}\b/i],
             // An identifier
             [PR['PR_PLAIN'],
                 /^-?(?:[_a-z]|(?:\\[\da-f]+ ?))(?:[_a-z\d\-]|\\(?:\\[\da-f]+ ?))*/i],
