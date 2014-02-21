@@ -1,0 +1,10 @@
+{
+  "name": "google-code-prettify-language-handlers",
+  "version": "0.1.5",
+  "ignore": [
+    "**/.*",
+    "bower.json",
+    "test.html",
+    "tmp"
+  ]
+}
