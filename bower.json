@@ -4,7 +4,7 @@
   "ignore": [
     "**/.*",
     "bower.json",
-    "test.html",
-    "tmp"
+    "tmp",
+    "test.html"
   ]
 }
