@@ -33,9 +33,9 @@ PR['registerLangHandler'](
             // Keywords
             [PR['PR_KEYWORD'], /^(?:function|endfunction|delfunction|return|call|let|unlet|lockvar|unlockvar|if|endif|else|elseif|while|endwhile|for|in|endfor|continue|break|try|endtry|catch|finally|throw|echo|echon|echohl|echomsg|echoerr|execute|set|setlocal|setglobal|autocmd|augroup|[nvxsoilc]?(?:nore|un)?map(?:clear)?|command)\b!?/],
             // Literal number
-            [PR['PR_LITERAL'], /^\d+|(?v:(?:true|false|none|null))/],
+            [PR['PR_LITERAL'], /^\d+|(?:v:(?:true|false|none|null))/],
             // Identifier
-            [PR['PR_PLAIN'], /^(?:(?:[a-z]|_\w)[\w:]*)/i],
+            [PR['PR_PLAIN'], /^(?:(?:[a-z]|_\w)[\w:#]*)/i],
             // Punctuation
             [PR['PR_PUNCTUATION'], /^[^\s\w\'\"]+/]
         ]
